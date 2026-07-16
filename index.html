@@ -31,4 +31,37 @@
 <body>
 
   <h1>
-    <img src="Logo2.png" alt="PNSR Logo" width="80" style="vertical-align: middle;
+    <img src="Logo2.png" alt="PNSR Logo" width="80" style="vertical-align: middle; margin-right: 15px;">
+    Cueva De Reviews
+  </h1>
+
+  <h2>Reviews de juegos y mas.</h2>
+
+  <h4>
+    <img src="Hades_Cover.png" alt="Hades Cover" width="200">
+  </h4>
+
+  <h5>
+    <img src="9.12.png" alt="hades review" width="50" style="vertical-align: middle; margin-right: 10px;">
+    <button onclick="toggleReview()" style="vertical-align: middle;">
+      En este aclamado título controlas a Zagreo, hijo de Hades...
+    </button>
+  </h5>
+
+  <div id="texto-resenia" style="display: none; margin-top: 15px; padding: 10px; border-left: 3px solid #ff4500; line-height: 1.6;">
+    <p>Zagreo tiene como objetivo escapar de su mandón padre, pero no lo va a hacer solo: cuenta con los dioses griegos para ayudarlo. En este increíble roguelite, donde cada decisión cuenta. Además, el juego tiene un envidiable arte y una banda sonora; aun así, cae en el típico bucle del género, pero igual vale la pena cada dólar gastado.</p>
+  </div>
+
+  <script>
+  function toggleReview() {
+    var texto = document.getElementById("texto-resenia");
+    if (texto.style.display === "none") {
+      texto.style.display = "block";
+    } else {
+      texto.style.display = "none";
+    }
+  }
+  </script>
+
+</body>
+</html>
